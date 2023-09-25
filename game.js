@@ -1,3 +1,8 @@
+function gameLoop() {
+  drawImages();
+}
+
 function startGame() {
-  return;
+  setImages();
+  gameLoop();
 }

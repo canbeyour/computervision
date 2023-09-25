@@ -33,7 +33,6 @@ function drawImages() {
 
     ctx.drawImage(img, images[i].x, images[i].y, imageWidth, imageHeight);
     images[i].y += images[i].speed;
-    console.log(images[i].y);
 
     if (images[i].y == -imageHeight) {
       return;

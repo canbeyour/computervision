@@ -7,8 +7,10 @@ const imagePaths = ["./rock.jpg", "./scissor.jpg", "./paper.jpg"];
 const imageWidth = 100; // 이미지의 가로 크기
 const imageHeight = 100; // 이미지의 세로 크기
 
+const imagesCount = 25;
+
 function setImages() {
-  for (let i = 0; i < 10; i++) {
+  for (let i = 0; i < imagesCount; i++) {
     let num = Math.floor(Math.random() * imagePaths.length);
 
     let x = Math.floor(Math.random() * canvas.width - imageWidth);
@@ -27,7 +29,7 @@ function setImages() {
 function drawImages() {
   ctx.clearRect(0, 0, canvas.width, canvas.height); // 캔버스 지우기
 
-  for (let i = 0; i < 10; i++) {
+  for (let i = 0; i < imagesCount; i++) {
     let img = new Image();
     img.src = images[i].imagePath;
 
